@@ -120,7 +120,3 @@ A separate simulation version was developed in Tinkercad to verify circuit conne
 ## License
 
 This project is released for educational and personal use.
-
----
-
-**Would you like me to help you create a specific "Release" on GitHub so people can download your code as a versioned .zip file?**
