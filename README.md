@@ -2,10 +2,6 @@
   <img src="images/hardware_image.jpeg" width="750">
 </p>
 
-<p align="center">
-  <img src="images/working_sample.gif" width="750">
-</p>
-
 # Arduino Snake Game 🐍
 **Real-time Arduino-based Snake Game demonstrating embedded system design, I/O handling, and hardware-software integration.**
 
@@ -19,7 +15,9 @@ This project implements the classic Snake Game as a real-time embedded system ap
 
 The main implementation is on physical hardware, with a separate Tinkercad simulation provided for reference and validation.
 
-
+<p align="center">
+  <img src="images/working_sample.gif" width="750">
+</p>
 
 ## Purpose of the Project
 - **Real-Time Design:** Demonstrate microcontroller-based timing control concepts.
