@@ -163,7 +163,7 @@ Aman Kumar
 Electronics and Communication Engineering  
 Embedded Systems, IOT, lINUX, AI/ML 
 
-GitHub: [https://github.com/YOUR_USERNAME](https://github.com/YukiCodepth)
+GitHub: (https://github.com/YukiCodepth)
 
 ---
 
