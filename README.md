@@ -1,6 +1,3 @@
-# arduino-snake-game
-Real-time Arduino-based Snake Game demonstrating embedded system design, I/O handling, and hardware-software integration.
-
 <p align="center">
   <img src="images/hardware_image.jpeg" width="750">
 </p>
@@ -8,6 +5,9 @@ Real-time Arduino-based Snake Game demonstrating embedded system design, I/O han
 <p align="center">
   <img src="images/working_sample.gif" width="750">
 </p>
+
+# arduino-snake-game
+Real-time Arduino-based Snake Game demonstrating embedded system design, I/O handling, and hardware-software integration.
 
 # Arduino Snake Game (Hardware Implementation)
 
