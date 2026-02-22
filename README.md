@@ -16,7 +16,7 @@ This project demonstrates complete system-level design, hardware-software integr
 
 ---
 
-## Project Overview
+## Project Overview:
 
 This project implements the classic Snake Game as a real-time embedded system application.  
 It handles user inputs, timing control, display rendering, score processing, and output signaling using dedicated hardware components.
@@ -25,7 +25,7 @@ The main implementation is on physical hardware, with a separate Tinkercad simul
 
 ---
 
-## Purpose of the Project
+## Purpose of the Project:
 
 - Demonstrate microcontroller-based real-time system design
 - Apply embedded I/O handling and timing control concepts
@@ -34,7 +34,7 @@ The main implementation is on physical hardware, with a separate Tinkercad simul
 
 ---
 
-## Features
+## Features:
 
 - Real-time snake movement
 - LCD-based gameplay display
@@ -47,7 +47,7 @@ The main implementation is on physical hardware, with a separate Tinkercad simul
 
 ---
 
-## Components Used
+## Components Used:
 
 ### Main Components
 - Arduino Uno
@@ -64,16 +64,63 @@ The main implementation is on physical hardware, with a separate Tinkercad simul
 
 ---
 
-## Circuit Design
+## Circuit Design:
 
 The complete circuit was first designed and verified using Tinkercad and later implemented on physical hardware.
 
 Detailed schematic and wiring diagrams are available in: /design/design.pdf
 
 
+
 ---
 
-## How to Run
+## Pin Configuration:
+
+### LCD (Parallel Interface)
+| Signal | Arduino Pin |
+|--------|-------------|
+| RS     | 7           |
+| E      | 8           |
+| D4-D7  | 9–12        |
+
+### Buttons
+| Function | Pin |
+|----------|------|
+| Start    | 2    |
+| Up       | 3    |
+| Down     | 4    |
+
+### Outputs
+| Component     | Pin  |
+|---------------|------|
+| Buzzer        | 13   |
+| Score LEDs    | 5–8  |
+| Game Over LED | 9    |
+| Button LEDs   | 10–12|
+
+### Potentiometer
+| Terminal | Connection |
+|----------|------------|
+| Middle   | A0         |
+| Others   | 5V, GND    |
+
+---
+
+## Project Structure:
+
+arduino-snake-game/
+│
+├── hardware/ → Final hardware implementation
+├── tinkercad/ → Simulation version
+├── images/ → Photos and demo GIF
+├── videos/ → Original demo video
+├── design/ → Circuit documentation
+└── README.md
+
+
+---
+
+## How to Run:
 
 1. Connect all components as per schematic
 2. Open Arduino IDE
@@ -84,7 +131,7 @@ Detailed schematic and wiring diagrams are available in: /design/design.pdf
 
 ---
 
-## Tinkercad Simulation
+## Tinkercad Simulation:
 
 A separate simulation version was developed in Tinkercad to verify circuit connections and logic before hardware deployment.
 
@@ -100,7 +147,7 @@ This version was used for:
 
 ---
 
-## Applications
+## Applications:
 
 - Embedded systems education
 - Microcontroller laboratory experiments
