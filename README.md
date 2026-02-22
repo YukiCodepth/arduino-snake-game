@@ -1,80 +1,60 @@
-# arduino-snake-game
-Real-time Arduino-based Snake Game demonstrating embedded system design, I/O handling, and hardware-software integration.
-
 <p align="center">
-  <img src="images/hardware_image.jpg" width="750">
+  <img src="images/hardware_image.jpeg" width="750">
 </p>
 
 <p align="center">
-  <img src="images/working_video.gif" width="750">
+  <img src="images/working_sample.gif" width="750">
 </p>
 
-# Arduino Snake Game (Hardware Implementation)
+# Arduino Snake Game 🐍
+**Real-time Arduino-based Snake Game demonstrating embedded system design, I/O handling, and hardware-software integration.**
 
-A real-time embedded Snake Game implemented on Arduino Uno using LCD display, push buttons, LEDs, potentiometer, and buzzer.  
-This project demonstrates complete system-level design, hardware-software integration, and real-time control.
+## 📍 Navigation
+[Features](#features) • [Components](#components-used) • [Pin Config](#pin-configuration) • [Tinkercad](#tinkercad-simulation) • [Project Structure](#project-structure)
 
 ---
 
-## Project Overview:
-
-This project implements the classic Snake Game as a real-time embedded system application.  
-It handles user inputs, timing control, display rendering, score processing, and output signaling using dedicated hardware components.
+## Project Overview
+This project implements the classic Snake Game as a real-time embedded system application. It handles user inputs, timing control, display rendering, score processing, and output signaling using dedicated hardware components.
 
 The main implementation is on physical hardware, with a separate Tinkercad simulation provided for reference and validation.
 
----
 
-## Purpose of the Project:
 
-- Demonstrate microcontroller-based real-time system design
-- Apply embedded I/O handling and timing control concepts
-- Integrate hardware and software into a complete system
-- Provide a practical learning platform for embedded systems
-
----
-
-## Features:
-
-- Real-time snake movement
-- LCD-based gameplay display
-- Button-controlled navigation
-- Speed control using potentiometer
-- Binary score display using LEDs
-- Game over indication with LED and buzzer
-- Pause and resume functionality
-- Multi-tone sound effects
+## Purpose of the Project
+- **Real-Time Design:** Demonstrate microcontroller-based timing control concepts.
+- **I/O Handling:** Apply embedded peripheral management.
+- **Integration:** Combine hardware and software into a functional, consumer-ready system.
+- **Education:** Provide a practical portfolio project for Embedded Systems and ECE.
 
 ---
 
-## Components Used:
+## Features
+- ✅ **Real-time movement:** Smooth snake navigation.
+- ✅ **LCD Display:** 16x2 character interface for gameplay.
+- ✅ **Tactile Control:** 3-button navigation (Start, Up, Down).
+- ✅ **Dynamic Speed:** Real-time difficulty adjustment using a potentiometer.
+- ✅ **Binary Score:** 8-LED array displaying score in binary format.
+- ✅ **Audio/Visual Alerts:** Buzzer tones and "Game Over" LED signals.
+- ✅ **Pause/Resume:** Ability to freeze the game state.
+
+---
+
+## Components Used
 
 ### Main Components
-- Arduino Uno
-- 16x2 LCD Display
-- Push Buttons (3x)
-- 10kΩ Potentiometer
-- Buzzer
-- Breadboard
-- Jumper Wires
+- **Microcontroller:** Arduino Uno
+- **Display:** 16x2 LCD Display
+- **Inputs:** Push Buttons (3x), 10kΩ Potentiometer
+- **Feedback:** Passive Buzzer, Breadboard, Jumper Wires
 
 ### LEDs and Resistors
-- LEDs × 8
-- 220Ω Resistors × 8
+- **Score Display:** 8x LEDs
+- **Protection:** 8x 220Ω Resistors
 
 ---
 
-## Circuit Design:
-
-The complete circuit was first designed and verified using Tinkercad and later implemented on physical hardware.
-
-Detailed schematic and wiring diagrams are available in: /design/design.pdf
-
-
-
----
-
-## Pin Configuration:
+## Pin Configuration
 
 ### LCD (Parallel Interface)
 | Signal | Arduino Pin |
@@ -85,85 +65,57 @@ Detailed schematic and wiring diagrams are available in: /design/design.pdf
 
 ### Buttons
 | Function | Pin |
-|----------|------|
-| Start    | 2    |
-| Up       | 3    |
-| Down     | 4    |
+|----------|-----|
+| Start    | 2   |
+| Up       | 3   |
+| Down     | 4   |
 
 ### Outputs
 | Component     | Pin  |
 |---------------|------|
 | Buzzer        | 13   |
 | Score LEDs    | 5–8  |
-| Game Over LED | 9    |
-| Button LEDs   | 10–12|
-
-### Potentiometer
-| Terminal | Connection |
-|----------|------------|
-| Middle   | A0         |
-| Others   | 5V, GND    |
+| Game Over LED | A1* |
+| Status LEDs   | A2* |
+> *Note: Using Analog pins as Digital outputs to prevent conflicts with LCD pins 9-12.*
 
 ---
 
-## Project Structure:
+## Project Structure
 
 arduino-snake-game/
 │
-├── hardware/ → Final hardware implementation
-├── tinkercad/ → Simulation version
-├── images/ → Photos and demo GIF
-├── videos/ → Original demo video
-├── design/ → Circuit documentation
-└── README.md
-
-
----
-
-## How to Run:
-
-1. Connect all components as per schematic
-2. Open Arduino IDE
-3. Upload `hardware/snake_game_hardware.ino`
-4. Power the board
-5. Press Start to begin gameplay
-6. Use Up and Down buttons to control movement
+├── hardware/   → Final hardware implementation (.ino)
+├── tinkercad/  → Simulation version and links
+├── images/     → Photos and demo GIF
+├── videos/     → Original high-res demo video
+├── design/     → Circuit schematics and PDF documentation
+└── README.md   → Project documentation
 
 ---
 
-## Tinkercad Simulation:
+## How to Run
 
-A separate simulation version was developed in Tinkercad to verify circuit connections and logic before hardware deployment.
-
-Location:/tinkercad
-
-
-This version was used for:
-
-- Circuit validation
-- Logic testing
-- Debugging
-- Pin optimization
+1. **Hardware Setup:** Connect all components according to the `design/design.pdf` schematic.
+2. **Software:** Open the Arduino IDE.
+3. **Upload:** Flash `hardware/snake_game_hardware.ino` to your Arduino Uno.
+4. **Play:** Power the board, press **Start**, and use the **Up/Down** buttons to play!
 
 ---
 
-## Applications:
+## Tinkercad Simulation
 
-- Embedded systems education
-- Microcontroller laboratory experiments
-- Hardware-software co-design learning
-- Technical exhibitions
-- Portfolio development
+A separate simulation version was developed in Tinkercad to verify circuit connections and logic before hardware deployment. Use this to test the logic without physical components.
+
+**Location:** /tinkercad
 
 ---
 
 ## Author
 
-Aman Kumar
-Electronics and Communication Engineering  
-Embedded Systems, IOT, lINUX, AI/ML 
+**Aman Kumar** *Electronics and Communication Engineering* Focus: Embedded Systems | IoT | Linux | AI/ML
 
-GitHub: [https://github.com/YOUR_USERNAME](https://github.com/YukiCodepth)
+[GitHub Profile](https://github.com/YukiCodepth)
 
 ---
 
@@ -171,3 +123,6 @@ GitHub: [https://github.com/YOUR_USERNAME](https://github.com/YukiCodepth)
 
 This project is released for educational and personal use.
 
+---
+
+**Would you like me to help you create a specific "Release" on GitHub so people can download your code as a versioned .zip file?**
